@@ -1,0 +1,15 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { fa-solid faStar } from "@fortawesome/free-solid-svg-icons";
+
+
+function ReviewBox({reviewText,person}) {
+    return (
+        <div className="reviewBox">
+            <div className="rating"><FontAwesomeIcon icon="fa-solid fa-star" style={{color: "#F4CE14",}} />test</div>
+            <div className="reviewText"><p>{reviewText}</p></div>
+            <div className="reviewBy"></div>
+        </div>
+  );
+};
+
+export default ReviewBox;

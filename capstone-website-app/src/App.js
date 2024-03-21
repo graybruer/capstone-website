@@ -1,7 +1,7 @@
 // import { ChakraProvider } from "@chakra-ui/react";
 // import { AlertProvider } from "./context/alertContext";
-// import Alert from "./components/Alert";
 
+import React from 'react';
 import './App.css';
 import Header from './components/Header.js';
 import Main from './components/Main.js';

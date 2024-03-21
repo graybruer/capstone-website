@@ -1,13 +1,15 @@
+import { Link } from 'react-router-dom';
+
 const Nav = () => {
     return (
         <nav className="nav">
             <ul className="navlist">
-                <li><a href="www.google.ca">Home</a></li>
-                <li><a href="www.google.ca">About</a></li>
-                <li><a href="www.google.ca">Menu</a></li>
-                <li><a href="www.google.ca">Reservations</a></li>
-                <li><a href="www.google.ca">Order Online</a></li>
-                <li><a href="www.google.ca">Login</a></li>
+                <li><Link to="/">Homepage</Link></li>
+                <li><Link to="/dumby-page">About</Link></li>
+                <li><Link to="/dumby-page">Menu</Link></li>
+                <li><Link to="/booking">Reservations</Link></li>
+                <li><Link to="/dumby-page">Order Online</Link></li>
+                <li><Link to="/dumby-page">Login</Link></li>
             </ul>
         </nav>
     );

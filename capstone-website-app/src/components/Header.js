@@ -4,7 +4,7 @@ import Nav from './Nav.js';
 
 const Header = () => {
     return (
-       <header className="header">
+       <header className="header widthFixing">
            <img src={logo} alt="Little Lemon Restaurant"></img>
            <Nav/>
        </header>

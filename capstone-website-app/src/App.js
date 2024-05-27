@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='container'>
       <Header/>
-      <Main/>
+      <Main  data-testid='Container'/>
       <Footer/>
     </div>
   );

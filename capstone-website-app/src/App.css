@@ -49,6 +49,18 @@ h3 {
   width: 10rem;
   font-weight: bold;
   font-size: 1.2rem;
+  box-shadow: inset 0px 1px px #EE9972;
+  transition: 0.25s;
+}
+
+.btn:active {
+  background-color: #EE9972;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #495E57;
 }
 
 .widthFixing {
@@ -63,6 +75,7 @@ h3 {
   flex-direction: column;
   width: 100vw;
   align-items: center;
+  min-height: 100vh;
   /* max-width: 1400px; */
 
   /* background-color: aqua; */
@@ -103,6 +116,7 @@ h3 {
 
 .main {
   /* background-color: brown; */
+  flex: 1;
   width: 100%;
 }
 
@@ -304,8 +318,78 @@ h3 {
   align-self: end;
 }
 
+#bookingPageHeader {
+  background-color: #495E57;
+  color: #ffffff;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bookingFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #F4CE14; */
+}
+
+#bookingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  margin: 3rem;
+  gap: 10px;
+  /* background-color: #EE9972; */
+}
+
+#bookingForm > * {
+  width: 100%;
+  /* margin: 0; */
+  outline: none;
+  outline-style: none;
+  color: #495E57;
+  border: none;
+  border-radius: 5px;
+}
+
+#bookingForm > *:focus {
+  outline: 1px solid #EE9972;
+}
+
+#bookingForm > label {
+  padding-top: 1rem;
+}
+
+#bookingForm > input, select {
+  padding: 0.25rem;
+  /* note to self: box-sizing is the one that fixes the size discrepancies. Look more into it later? */
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px #495E57;
+}
+
+.booking-button {
+  margin-top: 2rem;
+  height: 2rem;
+  color: #495E57;
+  background-color:#F4CE14;
+  box-shadow: inset 0px 0px 0px #495E57, 0px 0.5px 3px #495E57;
+  transition: 0.25s;
+}
+
+.booking-button:hover {
+  box-shadow: inset 0px 0.5px 3px #495E57, 0px 0px 0px #495E57;
+}
+
+.booking-button:focus {
+  box-shadow: inset 0px 0.5px 3px #495E57, 0px 0px 0px #495E57;
+}
+
 .footer {
-  background-color: #EE9972;
+  background-color: #495E57;
   color: #FFFFFF;
   display: flex;
   flex-direction: row;
@@ -346,9 +430,23 @@ h3 {
 }
 
 .dumbyPage {
-  /* text-align: center; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+#dumbyTitle {
+  background-color: #495E57;
+  color: #ffffff;
+  height: 6rem;
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+#dumbyContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  gap: 0.5rem;
 }

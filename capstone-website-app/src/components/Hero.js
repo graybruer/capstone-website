@@ -9,7 +9,7 @@ const Hero = () => {
                     <h1 id="heroTitle">Little Lemon</h1>
                     <h2>Chicago</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod condimentum ante finibus consequat. Donec Mauris accumsan tellus mi, vitae rutrum felis scelerisque at.</p>
-                    <Link to="/booking"><div className='btn' id='bookingBtn'>Reserve a Table</div></Link>
+                    <Link to="/booking"><div className='btn'>Reserve a Table</div></Link>
                 </div>
                 <div className='heroRight'>
                     <img src={heroImage} alt="Food from the Little Lemon restaurant" className='heroImage'></img>

@@ -1,6 +1,6 @@
-import ReviewBox from "./ReviewBox";
+// import ReviewBox from "./ReviewBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/fontawesome-free-solid";
+// import { faStar } from "@fortawesome/fontawesome-free-solid";
 import avatar1 from '../assets/thispersondoesnotexist.jpg';
 import avatar2 from '../assets/thispersondoesnotexist1.jpg';
 import avatar3 from '../assets/thispersondoesnotexist2.jpg';

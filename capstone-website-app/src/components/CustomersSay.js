@@ -1,6 +1,6 @@
 // import ReviewBox from "./ReviewBox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faStar } from "@fortawesome/fontawesome-free-solid";
+import { faStar } from "@fortawesome/fontawesome-free-solid";
 import avatar1 from '../assets/thispersondoesnotexist.jpg';
 import avatar2 from '../assets/thispersondoesnotexist1.jpg';
 import avatar3 from '../assets/thispersondoesnotexist2.jpg';
@@ -11,7 +11,7 @@ const CustomersSay = () => {
         <article className="reviewSection">
             <h1 id="reviewTitle">Testimonials</h1>
             <div className="reviewGrid widthFixing">
-                {/* I don't know why this is breaking everything and it's not even throwing an error to point at anything.
+                {/* I don't know why this is breaking everything and it's not even throwing an error to point a finger at anything.
                     I'm fed up with it for the moment so I'm just going to do it the more static way and revisit this later */}
                 {/*
                 <ReviewBox

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const BookingForm = ({availableTimes, dispatch}) => {
 
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const { times } = availableTimes;
   const [bookings, setBookings] = useState({
     date: '',
@@ -54,9 +54,6 @@ const navigate = useNavigate();
 
   return (
     <section  id='bookingFormContainer' name='reservations' className='booking-form'>
-      {/* <LinkR to='/'>
-        <img src={home} alt='home' className='booking-home' />
-      </LinkR> */}
       <div className='bookings-container'>
         {/* <h2 className='booking-header'>Little Lemon</h2>
         <h2 className='booking-subheader'>Chicago</h2>
@@ -67,8 +64,9 @@ const navigate = useNavigate();
           aria-label='On Submit'
         >
           {/* DATE */}
-          <label htmlFor='res-date'>Date: </label>
+          <label htmlFor='res-date'>Date:</label>
           <input
+            data-testid='date'
             type='date'
             name='date'
             id='res-date'

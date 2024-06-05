@@ -13,7 +13,7 @@ a {
 
 a:hover {
   /* color: #495E57; */
-  text-shadow: 0 0 20px #F4CE14;
+  /* text-shadow: 0 0 20px #F4CE14; */
 }
 
 ul {
@@ -43,19 +43,26 @@ h3 {
 
 .btn {
   background-color: #F4CE14;
+  border: 2px solid #F4CE14;
   border-radius: 16px;
   text-align: center;
   padding: 1rem;
   width: 10rem;
   font-weight: bold;
   font-size: 1.2rem;
-  box-shadow: inset 0px 1px px #EE9972;
-  transition: 0.25s;
+  transition: 0.33s;
 }
 
-.btn:active {
-  background-color: #EE9972;
+.btn:hover {
+  color: #F4CE14;
+  background-color: #495E57;
 }
+
+.btn:focus {
+  color: #F4CE14;
+  background-color: #495E57;
+}
+
 
 label {
   font-weight: bold;
@@ -99,7 +106,6 @@ label {
   align-items: center;
 
   width: 60%;
-  /* background-color: gold; */
 }
 
 .navlist {
@@ -110,8 +116,32 @@ label {
   font-size: 1.25rem;
   font-weight: bold;
   text-transform: uppercase;
+  position: relative;
+}
 
-  /* background-color: bisque; */
+.navlist > li > a {
+  width: fit-content;
+  position: relative;
+}
+
+.navlist > li > a::after {
+  content: '';
+  height: 0.15rem;
+  width: 100%;
+  background-color: #333333;
+  display: block;
+  margin-top: 6px;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  opacity: 0;
+  transition: 0.25s;
+  pointer-events: none;
+}
+
+.navlist > li > a:hover::after,
+.navlist > li > a:focus::after {
+  opacity: 1;
 }
 
 .main {
